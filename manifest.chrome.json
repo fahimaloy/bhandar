@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Bhandar",
+  "version": "0.1.0",
+  "description": "Smart download sorter: organize downloads into folders by file type.",
+  "permissions": ["downloads", "storage"],
+  "optional_permissions": ["notifications"],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Bhandar",
+    "default_icon": "src/assets/icon-32.png"
+  },
+  "side_panel": {
+    "default_path": "src/sidebar/sidebar.html"
+  },
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "icons": {
+    "16": "src/assets/icon-16.png",
+    "32": "src/assets/icon-32.png",
+    "48": "src/assets/icon-48.png",
+    "128": "src/assets/icon-128.png"
+  }
+}

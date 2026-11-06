@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Bhandar",
+  "version": "0.1.0",
+  "description": "Smart download sorter: organize downloads into folders by file type.",
+  "permissions": ["downloads", "storage"],
+  "optional_permissions": ["notifications"],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Bhandar",
+    "default_icon": "src/assets/icon-32.png"
+  },
+  "sidebar_action": {
+    "default_panel": "src/sidebar/sidebar.html",
+    "default_title": "Bhandar",
+    "default_icon": "src/assets/icon-32.png"
+  },
+  "background": {
+    "scripts": ["src/background/background.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bhandar@fahimaloy",
+      "strict_min_version": "128.0"
+    },
+    "gecko_android": {
+      "strict_min_version": "128.0"
+    }
+  },
+  "icons": {
+    "16": "src/assets/icon-16.png",
+    "32": "src/assets/icon-32.png",
+    "48": "src/assets/icon-48.png",
+    "128": "src/assets/icon-128.png"
+  }
+}
