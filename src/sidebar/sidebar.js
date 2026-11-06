@@ -1,3 +1,4 @@
+const browser = globalThis.browser || globalThis.chrome;
 const dashboard = document.getElementById("dashboard");
 const themeToggle = document.getElementById("themeToggle");
 const modal = document.getElementById("modal");
@@ -16,7 +17,7 @@ function toast(msg) {
 async function load() {
   const data = await browser.storage.local.get(["sections","settings"]);
   sections = data.sections || [
-    { id:"images", name:"Images", dir:"Pictures", exts:["jpg","jpeg","png","gif","webp","svg"] },
+    { id:"images", name:"Images", dir:"Pictures", exts:["jpg","jpeg","png","webp","svg"] },
     { id:"videos", name:"Videos", dir:"Videos", exts:["mp4","mkv","avi","mov","webm"] },
     { id:"music", name:"Music", dir:"Music", exts:["mp3","flac","wav","ogg","m4a"] },
     { id:"gif", name:"GIF", dir:"Videos", exts:["gif"] },

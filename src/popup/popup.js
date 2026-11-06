@@ -1,3 +1,4 @@
+const browser = globalThis.browser || globalThis.chrome;
 const perms = document.getElementById("perms");
 const OPTIONAL = ["notifications"];
 async function render() {

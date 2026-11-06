@@ -1,3 +1,4 @@
+const browser = globalThis.browser || globalThis.chrome;
 // background.js
 const DEFAULT_SECTIONS = [
   { id: "images", name: "Images", dir: "Pictures", exts: ["jpg","jpeg","png","webp","svg","bmp"] },
